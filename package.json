@@ -1,0 +1,30 @@
+{
+  "name": "token-timelock",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "deploy:local": "truffle migrate --network local",
+    "deploy:testnet": "truffle migrate --network bscTestnet",
+    "console:testnet": "truffle console --network bscTestnet",
+    "verify:testnet": "truffle run verify CovacLPTimelock --network bscTestnet"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/youjinchoi/token-timelock.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/youjinchoi/token-timelock/issues"
+  },
+  "homepage": "https://github.com/youjinchoi/token-timelock#readme",
+  "dependencies": {
+    "@openzeppelin/contracts": "^4.1.0",
+    "@truffle/hdwallet-provider": "^1.4.0"
+  },
+  "devDependencies": {
+    "truffle-plugin-verify": "^0.5.9"
+  }
+}
